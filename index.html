@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Personal Portfolio Website showcasing skills, projects, and contact information.">
+    <meta name="keywords" content="Portfolio, Web Developer, HTML5, Accessibility">
+    <meta name="author" content="Your Name">
+
+    <title>My Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            line-height:1.6;
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#222;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            margin-top:10px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:focus,
+        nav a:hover{
+            text-decoration:underline;
+        }
+
+        main{
+            max-width:1000px;
+            margin:auto;
+            padding:20px;
+        }
+
+        section{
+            background:white;
+            padding:20px;
+            margin-bottom:20px;
+            border-radius:8px;
+        }
+
+        article{
+            margin-top:10px;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+        }
+
+        label{
+            margin-top:10px;
+        }
+
+        input,
+        textarea{
+            padding:10px;
+            margin-top:5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        button{
+            margin-top:15px;
+            padding:10px;
+            background:#222;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#444;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header role="banner">
+    <h1>My Portfolio</h1>
+
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main role="main">
+
+    <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
+        <p>
+            Hello! I am a web developer passionate about creating
+            accessible and user-friendly websites.
+        </p>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+
+        <article>
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio built using HTML5, CSS3, and accessibility best practices.</p>
+        </article>
+
+        <article>
+            <h3>Weather App</h3>
+            <p>A real-time weather dashboard using JavaScript and APIs.</p>
+        </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Me</h2>
+
+        <form aria-label="Contact Form">
+
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                aria-required="true">
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true">
+
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                aria-required="true"></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
